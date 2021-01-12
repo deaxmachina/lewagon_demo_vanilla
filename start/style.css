@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Montserrat:wght@300&display=swap');
+
+:root {
+  --background-colour: #010B14;
+  --creme-white: #f6f2e7;
+  --pink-colour: #f72585;
+  --purple-colour: #4361ee;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-colour);
+  color: var(--creme-white);
+}
+
+.whole-graph-demo {
+  background-color: var(--background-colour);
+  margin: auto;
+  text-align: center;
+  color: var(--creme-white);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.whole-graph-title {
+  padding-top: 50px;
+  font-weight: bold;
+  font-family: 'Fraunces', serif;
+  font-size: 50px;
+}
+
+.whole-graph-subtitle {
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Fraunces', serif;
+}
+
+a:link {
+  color: var(--pink-colour);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--pink-colour);
+}
+a:hover {
+  color: var(--purple-colour);
+}
+
+.whole-graph-instructions-title {
+  margin-top: 20px;
+}
+
+.whole-graph-instructions {
+  width: 40%;
+  margin: auto;
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+li::marker {
+  content: "\2605 ";
+  color: var(--purple-colour);
+  font-size: 9px;
+}
+
+li > span {
+  margin: 5px;
+}
+
+.whole-graph-selected-year {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Fraunces', serif;
+}
+
+.whole-graph-demo-container {
+  background-color: var(--background-colour);
+  color: var(--creme-white);
+  width: 100%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.whole-graph-demo-tooltip {
+  position: absolute;
+  background-color: none;
+  top: 30%;
+  right: 10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  text-align: center;
+  color: var(--creme-white);
+}
+
+.whole-graph-demo-tooltip-title {
+  display: block;
+  font-size: 30px;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 10px;
+}
+
+.whole-graph-demo-tooltip-info {
+  display: block;
+  font-size: 14px;
+}
