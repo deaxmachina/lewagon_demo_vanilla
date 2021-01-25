@@ -30,7 +30,7 @@ async function drawChart() {
   /////////////////////////////////////////////
 
   /// 1. Read in the data ///
-  const allData = await d3.json("../mal_scrape_Jan8_limited.json");
+  const allData = await d3.json("mal_scrape_Jan8_limited.json");
 
   /// 2. Data munging - for the timeline graph ///
   // transform data into just {year: 2020, number_anime: 800} type and only keep unique animes per each year 
@@ -84,7 +84,7 @@ async function drawChart() {
   // Colour scale - number of anime per year
   const colorScale = chroma.scale([lowNumberColour, highNumberColour]
     .map(color => chroma(color).saturate(1)))
-    .domain([0, 900]); // min and max of the anime per year; hardcoded
+    .domain(d3.extent(data, (d) => d.number_animes)); // min and max of the anime per year
 
   // Number of anime scale - scale radius of circle by number of anime per year
   const numberAnimeScale = d3.scaleSqrt()

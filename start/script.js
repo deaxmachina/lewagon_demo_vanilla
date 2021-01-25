@@ -91,6 +91,8 @@ async function drawChart() {
   /// 3. Graph ///
   // Container for the timeline - group
 
+  // 3.1. Timeline circles - draw one circle for each year, coloured by number of anime
+
 
   // 3.2. Add text with number of animes on top of each circle
 
